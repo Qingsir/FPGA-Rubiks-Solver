@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Dec 12 17:21:32 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : DE2_CCD
+Top-level Entity Name : DE2_CCD
+Family : Cyclone IV E
+Total logic elements : 1,528
+    Total combinational functions : 1,159
+    Dedicated logic registers : 967
+Total registers : 967
+Total pins : 425
+Total virtual pins : 0
+Total memory bits : 76,504
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

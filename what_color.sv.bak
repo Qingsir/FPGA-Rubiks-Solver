@@ -1,0 +1,40 @@
+module what_color(
+					input [9:0] R, G, B,
+					output color
+					);
+					
+//test white
+always_comb
+begin
+	if (iR > 10'b0110000000 && iG > 10'b0110000000 && iB > 10'b0110000000)
+	begin
+		color1 = 4'h0;
+	end
+	//test red
+	else if (iR > 10'b0110000000 && /*iG > 10'b0000000000 && iB > 10'b0000000000 && */iG < 10'b0011000000 && iB < 10'b0011000000)
+	begin
+		color1 = 4'h1;
+	end
+	//test orange
+	else if (iR > 10'b0110000000 && iG > 10'b0011000000 /*&& iB > 10'b0000000000 */ && iG < 10'b0110000000 && iB < 10'b0011000000)
+	begin
+		color1 = 4'h2;
+	end
+	//test yellow
+	else if (iR > 10'b0110000000 && iG > 10'b0110000000 /*&& iB > 10'b0000000000  && iG < 10'b0110000000 */ && iB < 10'b0110000000)
+	begin
+		color1 = 4'h3;
+	end
+	//test green
+	else if (iR < 10'b0011000000 && iG > 10'b0110000000 /*&& iB > 10'b0000000000  && iG < 10'b0110000000 */ && iB < 10'b0011000000)
+	begin
+		color1 = 4'h4;
+	end
+	//test blue
+	else if (iR < 10'b0011000000 && iG > 10'b0110000000 /*&& iB > 10'b0000000000  && iG < 10'b0110000000 */ && iB < 10'b0011000000)
+	begin
+		color1 = 4'h5;
+	end
+end
+					
+endmodule

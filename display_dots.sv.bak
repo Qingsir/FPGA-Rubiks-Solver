@@ -1,0 +1,14 @@
+module display_dots(
+	input [9:0] x_read,y_read,
+	input VGA_Clk, Clk, fastClock,
+	input reset,
+	output logic isDot
+);
+
+always_comb
+begin
+	if x_read >= 10'd
+	
+end
+
+endmodule

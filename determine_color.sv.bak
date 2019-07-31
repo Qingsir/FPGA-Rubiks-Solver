@@ -1,0 +1,6 @@
+module determine_color(
+							input [9:0] iR,
+							input [9:0] iG,
+							input [9:0] iB,
+							output [3:0] face1
+							);
